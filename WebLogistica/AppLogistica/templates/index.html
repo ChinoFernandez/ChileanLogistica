@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+        Inicio | ChileanTrading
+        {% endblock %}
+    </title>
+</head>
+<header>
+    <div class="navbar">
+        <img src="{% static 'img/ChileanLogoSF.png' %}">
+        <div>
+            <ul>
+                <li>
+                    <a href="{% url 'index' %}">Inicio</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<body>
+    {% block boddy %}
+        <div>
+
+        </div>
+    {% endblock %}
+</body>
+
+<footer>
+
+</footer>
+</html>
